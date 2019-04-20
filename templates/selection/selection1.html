@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selection Form</title>
+        <link rel="stylesheet" type="text/css" href="../../static/styles/selection/selection.css">
+</head>
+<body>
+    <div class="bgimage">
+   <div class="menu">
+      <div class="leftmenu">
+      	<!-- <h4>Abhishek kumar</h4> -->
+        <img src="../../static/styles/selection/MNNIT.png">
+      </div>
+      <div class="rightmenu">
+      	<ul>
+      		<li id="firstcolor"><a href="https://www.google.com">home</a></li>
+      		<li>service</li>
+      		<li>works</li>
+      		<li>about</li>
+      		<li>blogs</li>
+      		<li>contact</li>
+      	</ul>
+      </div>
+   </div>
+   <div class="grid">
+   	   <form action="http://localhost:5000/selection", method="POST", id="quiz">
+   	   	<h1>Characteristics of Requirements</h1>
+   	   	<hr style="margin-top: 20px">
+
+        <p id="question">Q1. Are requirements easily understable and defined?</p>
+        <input type="radio" id="yes" name="question1" value="yes"><label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="question1" value="no"><label for="no">No</label><br>
+
+        <p id="question">Q2. Do we change requirement quite often?</p>
+        <input type="radio" id="mc" name="question2" value="yes"><label for="yes">Yes</label><br>
+        <input type="radio" id="mc" name="question2" value="no"><label for="no">No</label><br>
+
+        <p id="question">Q3. can requirement be define early in cycle?</p>
+        <input type="radio" id="mc" name="question3" value="yes"><label for="yes">Yes</label><br>
+        <input type="radio" id="mc" name="question3" value="no"><label for="no">No</label><br>
+
+        <p id="question">Q4. Requirement are indicting a complex system?</p>
+        <input type="radio" id="mc" name="question4" value="yes"><label for="yes">Yes</label><br>
+        <input type="radio" id="mc" name="question4" value="no"><label for="no">No</label><br>
+        <input type="hidden" name = "key" value="2">
+        <input id="button" type="submit" value="submit" onclick="check();">
+
+
+   	   </form>
+   </div>
+   </div>
+</body>
+</html>

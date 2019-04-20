@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+        <link rel="stylesheet" type="text/css" href="../../static/styles/register_page/register.css">
+</head>
+<body>
+    <div class="bgimage">
+   <div class="menu">
+      <div class="leftmenu">
+      	<!-- <h4>Abhishek kumar</h4> -->
+        <img src="../../static/styles/register_page/MNNIT.png">
+      </div>
+      <div class="rightmenu">
+      	<ul>
+      		<li id="firstcolor"><a href="https://www.google.com">home</a></li>
+      		<li>service</li>
+      		<li>works</li>
+      		<li>about</li>
+      		<li>blogs</li>
+      		<li>contact</li>
+      	</ul>
+      </div>
+   </div>
+   <div class="registerbox">
+   	   <h1>Register Here</h1>
+   	   <form action="http://localhost:5000/register" method="POST">
+   	   	<p>User Name</p>
+   	   	<input type="text" name="username" placeholder="Enter your User name">
+   	   	<p>Password</p>
+   	   	<input type="Password" name="password" placeholder="Password">
+        <p>Email Id</p>
+        <input type="email" name="email" placeholder="Email">
+        <p>Mobile No</p>
+        <input type="tel" name="contact" placeholder="Phone no">
+
+   	   	<input type="submit" name="" value="Login">
+   	   	<!-- <a href="#">Lost Your Password?</a><br>
+   	   	<a href="#">Not have an account?</a> -->
+   	   </form>
+   </div>
+   </div>
+</body>
+</html>

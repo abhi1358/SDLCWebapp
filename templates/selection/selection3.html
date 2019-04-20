@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selection Form</title>
+        <link rel="stylesheet" type="text/css" href="../../static/styles/selection/selection.css">
+</head>
+<body>
+    <div class="bgimage">
+   <div class="menu">
+      <div class="leftmenu">
+      	<!-- <h4>Abhishek kumar</h4> -->
+        <img src="../../static/styles/selection/MNNIT.png">
+      </div>
+      <div class="rightmenu">
+      	<ul>
+      		<li id="firstcolor"><a href="https://www.google.com">home</a></li>
+      		<li>service</li>
+      		<li>works</li>
+      		<li>about</li>
+      		<li>blogs</li>
+      		<li>contact</li>
+      	</ul>
+      </div>
+   </div>
+   <div class="grid">
+   	   <form action="http://localhost:5000/selection", method="POST" id="quiz">
+   	   	<h1>Involvement of Users</h1>
+   	   	<hr style="margin-top: 20px">
+
+        <p id="question">Q1. User involvement in all phases?</p>
+        <input type="radio" id="yes" name="question1" value="yes"><label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="question1" value="no"><label for="no">No</label><br>
+
+        <p id="question">Q2. Limited user participation?</p>
+        <input type="radio" id="mc" name="question2" value="yes"><label for="yes">Yes</label><br>
+        <input type="radio" id="mc" name="question2" value="no"><label for="no">No</label><br>
+
+        <p id="question">Q3. User have no previous experience?</p>
+        <input type="radio" id="mc" name="question3" value="yes"><label for="yes">Yes</label><br>
+        <input type="radio" id="mc" name="question3" value="no"><label for="no">No</label><br>
+
+        <p id="question">Q4. Users are experts of problems domain?</p>
+        <input type="radio" id="mc" name="question4" value="yes"><label for="yes">Yes</label><br>
+        <input type="radio" id="mc" name="question4" value="no"><label for="no">No</label><br>
+        <input type="hidden" name = "key" value="4">
+        <input id="button" type="submit" value="Submit" onclick="check();">
+
+
+   	   </form>
+   </div>
+   </div>
+</body>
+</html>
+

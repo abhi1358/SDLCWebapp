@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selection Form</title>
+        <link rel="stylesheet" type="text/css" href="../../static/styles/results/output.css">
+</head>
+<body>
+    <div class="bgimage">
+   <div class="menu">
+      <div class="leftmenu">
+      	<!-- <h4>Abhishek kumar</h4> -->
+        <img src="../../static/styles/results/MNNIT.png">
+      </div>
+      <div class="rightmenu">
+      	<ul>
+      		<li id="firstcolor"><a href="https://www.google.com">home</a></li>
+      		<li>service</li>
+      		<li>works</li>
+      		<li>about</li>
+      		<li>blogs</li>
+      		<li>contact</li>
+      	</ul>
+      </div>
+   </div>
+   
+
+   <h1 style="margin-top: 50px; text-align: center; color: blue;" >Selected model is {{ res }} model.</h1>
+
+   <h3 style="margin-top: 30px; text-align: center; color: red;" ><a  style="color: red" href="{{ url_for('logout')}}">Logout</a></h3>
+
+    <table align="center">
+   	<tr>
+   		<td colspan="7"><h1>Model based on characteristics of requirement</h1></td>
+   	</tr>
+   	<tr>
+   		<th id="abhi">Requirement</th>
+   		<th>Waterfall</th>
+   		<th>Prototype</th>
+   		<th>Iterative enhancement</th>
+   		<th>Evolutionary development</th>
+   		<th>spiral</th>
+   		<th>RAD</th>
+   	</tr>
+   	<tr>
+   		<td>Are requirement easily understandable and defined?</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   	</tr>
+   	<tr>
+   		<td>Do we change requirements quite often?</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   	</tr>
+   	<tr>
+   		<td>Can we define requirements early in the cycle?</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   	</tr>
+   	<tr>
+   		<td>Requirements are indicating a complex system?</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   	</tr>
+   </table>
+
+
+
+   <table align="center">
+   	<tr>
+   		<td colspan="7"><h1>Model based on status of development team</h1></td>
+   	</tr>
+   	<tr>
+   		<th id="abhi">Requirement</th>
+   		<th>Waterfall</th>
+   		<th>Prototype</th>
+   		<th>Iterative enhancement</th>
+   		<th>Evolutionary development</th>
+   		<th>spiral</th>
+   		<th>RAD</th>
+   	</tr>
+   	<tr>
+   		<td>Less experience on similar projects?</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   	</tr>
+   	<tr>
+   		<td>Less domain knowledge?</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   	</tr>
+   	<tr>
+   		<td>Less experienced on tools to be used?</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   	</tr>
+   	<tr>
+   		<td>Availability of training, if required?</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   	</tr>
+   </table>
+
+
+   <table align="center">
+   	<tr>
+   		<td colspan="7"><h1>Model based on user's participation</h1></td>
+   	</tr>
+   	<tr>
+   		<th id="abhi">Requirement</th>
+   		<th>Waterfall</th>
+   		<th>Prototype</th>
+   		<th>Iterative enhancement</th>
+   		<th>Evolutionary development</th>
+   		<th>spiral</th>
+   		<th>RAD</th>
+   	</tr>
+   	<tr>
+   		<td>User involvement in all phases?</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   	</tr>
+   	<tr>
+   		<td>Limited user participation?</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   	</tr>
+   	<tr>
+   		<td>User have no previous exprience of similar projects?</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   	</tr>
+   	<tr>
+   		<td>Users are experts of problem domain?</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   	</tr>
+   </table>
+
+
+   <table align="center">
+   	<tr>
+   		<td colspan="7"><h1>Model based on project with associated risk</h1></td>
+   	</tr>
+   	<tr>
+   		<th id="abhi">Requirement</th>
+   		<th>Waterfall</th>
+   		<th>Prototype</th>
+   		<th>Iterative enhancement</th>
+   		<th>Evolutionary development</th>
+   		<th>spiral</th>
+   		<th>RAD</th>
+   	</tr>
+   	<tr>
+   		<td>Project is enhancement of existing system?</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   	</tr>
+   	<tr>
+   		<td>Funding is stable for the project?</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   	</tr>
+   	<tr>
+   		<td>High reliability requirement</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   	</tr>
+   	<tr>
+   		<td>Tight project schedule?</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   	</tr>
+   	<tr>
+   		<td>Use of reusable components?</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>Yes</td>
+   	</tr>
+   	<tr>
+   		<td>Are resources(time,money,people) scare?</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   		<td>No</td>
+   		<td>Yes</td>
+   		<td>No</td>
+   	</tr>
+   </table>
+
+
+
+
+   </div>
+</body>
+</html>
